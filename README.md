@@ -1,1 +1,1 @@
-# mytodolist.github.io
+# mytodolist
