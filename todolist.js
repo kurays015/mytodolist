@@ -31,10 +31,7 @@ const todoList = [];
         const dueDate = inputDate.value;
 
         if(input.value !== '' && inputDate.value !== ''){    
-          todoList.push({
-            name,
-            dueDate
-          });
+          todoList.push({name, dueDate});
           input.value = '';
           inputDate.value = '';
           displayResult()
