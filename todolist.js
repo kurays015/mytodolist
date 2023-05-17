@@ -21,6 +21,7 @@ const todoList = [];
             todoListHTML += html; 
         }
         document.querySelector('.js-display-result').innerHTML = todoListHTML;
+        localStorage.setItem('todoList', JSON.stringify(todoList));
   }
   
   function addTodo(){
@@ -46,4 +47,9 @@ const todoList = [];
         }
         event.preventDefault();
   }
+const savedTodoList = localStorage.getItem('todoList');
+if (savedTodoList) {
+  todoList = JSON.parse(savedTodoList);
+  displayResult();
+}
   addButton.addEventListener('click',addTodo);
