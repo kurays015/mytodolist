@@ -57,5 +57,6 @@ if (savedTodoList) {
   todoList = JSON.parse(savedTodoList);
   displayResult();
 }
+displayResult();
 
 addButton.addEventListener('click', addTodo);
